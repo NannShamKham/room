@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+$theme-colors: (
+        "primary": hsl(0, 0%, 63%),
+        "danger": hsl(0, 0%, 27%),
+        "dark":hsl(0, 0%, 0%),
+        "white":hsl(0, 0%, 100%),
+);
+$btn-border-radius:0px;
+$font-family-sans-serif:'League Spartan', sans-serif;
+@import "node_modules/bootstrap/scss/bootstrap";
+p{
+  font-size: 12px;
+}
+h3{
+  font-size: 19px;
+}
+h1{
+  font-size: 31px;
+}
+
+.navbar{
+  z-index: 1001;
+}
+.carousel-button{
+  top: 443px;
+  transition: 0.5s;
+}
+.carousel-button button:hover{
+  background-color: var(--bs-danger);
+}
+.spacer{
+  height: 50px;
+}
+
+@media screen and (max-width: 576px){
+  .carousel-button{
+    right: 0px;
+    top: 179px;
+  }
+}
